@@ -1,0 +1,9 @@
+To start the game, each player draws ten White Cards.
+The person who most recently pooped begins as the Card Czar and plays a Black Card. The Card Czar reads the questions or fill-in-the-blank phrase on the black card out loud.
+
+Everyone else answers the question or fills in the blank by passing one white card, face down, to the Card Czar.
+
+The Card Czar shuffles all of the answers and shares each card combination with the group. For full effect, the Card Czar should usually re-read the black card before presenting each answer. The card Czar then picks the funniest play, and whoever submitted it gets one point.
+
+After the round, a new player (clockwise) becomes the Card Czar, and everyone draws back up to ten white card. After 10 rounds, whoever has max points wins.
+

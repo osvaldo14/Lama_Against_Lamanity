@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cards Against Lamanity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "black.css"/>
+    <script src=/socket.io/socket.io.js"></script>
+</head>
+<body class="body text-white">
+<div class="bodycontainer-fluid">
+    <div id="topBar"></div>
+
+    <!-- -------------- CONTENT -------------- -->
+    <div class="spacer100"></div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-3">
+            <div class="input-group">
+                <h3>DECKS</h3>
+                <div class="col-2"></div>
+                <span class="input-group-btn">
+                    <a class="btn btn-secondary" href="createDeck.html" role="button">Ajouter Deck</a>
+                </span>
+                <div class="spacer50"></div>
+            </div>
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"></div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-7">
+            <div class="spacer50"></div>
+            <div class="spacer10"></div>
+            <div class="tab-content" id="v-pills-tab-content"></div>
+            <div class="spacer50"></div>
+            <a class="btn btn-secondary" href="supprimerDeck.html" role="button">Supprimer ce Deck</a>
+            <a class="btn btn-secondary" href="modifierDeck.html" role="button">Modifier ce Deck</a>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        $("#topBar").load("topbar.html");
+    });
+</script>
+<script src="deck.js"></script>
+</body>
+</html>
+

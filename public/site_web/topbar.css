@@ -1,0 +1,10 @@
+.icon-navbar{
+    max-width: 100%;
+    height: auto;
+}
+.nav-link.pill-topbar{
+    max-width: 15%;
+}
+.nav-pills .nav-link.active{
+    background-color:#4455AA;
+}

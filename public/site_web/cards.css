@@ -1,0 +1,136 @@
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans+Mono';
+
+body{
+  background-color:grey;
+  background-image:url("./images/alpaca.jpg");
+
+}
+
+.upper{
+  font-family	: Helvetica,sans-serif;
+  font-weight	: bolder;
+  font-size		: 25px;
+  padding-left	:7%;
+  padding-right	:7%;
+  word-wrap		: break-word;
+  width 		: 85%;
+  text-align	: center;
+  color 		: white;
+  text-shadow: 
+        /* first layer at 1px */
+        -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000,
+        /* second layer at 2px */
+        -2px -2px 0px #000,
+        -1px -2px 0px #000,
+         0px -2px 0px #000,
+         1px -2px 0px #000,
+         2px -2px 0px #000,
+         2px -1px 0px #000,
+         2px  0px 0px #000,
+         2px  1px 0px #000,
+         2px  2px 0px #000,
+         1px  2px 0px #000,
+         0px  2px 0px #000,
+        -1px  2px 0px #000,
+        -2px  2px 0px #000,
+        -2px  1px 0px #000,
+        -2px  0px 0px #000,
+        -2px -1px 0px #000;
+
+}
+
+.cardContainer{
+  /*overflow:hidden;*/
+  margin-left:5%;
+}
+
+.card{
+  /* Card Sizing */
+  width: 2.2in;
+  height: 3in;
+  border-radius: .15in;
+  
+  /* Display Properties */
+  float: left;
+  margin: 10px;
+}
+
+.dark{
+  /* Color information */
+  /*border: 1px solid black;*/
+  color: white;
+  background: black;
+}
+
+.light{
+  /* Color information */
+  border: 3px solid transparent;
+  color: black;
+  background: white;
+}
+
+.text{
+  /*font information*/
+  font-family: Helvetica,sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-left:7%;
+  padding-right:7%;
+  word-wrap: break-word;
+}
+
+.subtext{
+  /*font information*/
+  font-family: Helvetica,sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left:7%;
+  padding-right:7%;
+  word-wrap: break-word;
+}
+
+.menu{
+  list-style-type: none;
+}
+
+.menu li:hover{
+  color: #d9d9d9;
+}
+
+.cardstack{
+  width:2.5in;
+  float:left;
+}
+
+.stackcard{
+  /* Card Sizing */
+  width: 2.5in;
+  height: 4in;
+  border-radius: .25in;
+  
+  /* Display Properties */
+  position:absolute;
+  margin: 10px;
+}
+
+.stackcard:nth-child(2){
+  margin: 10px;
+  margin-top: 80px;
+}
+
+.stackcard:nth-child(3){
+  margin: 10px;
+  margin-top: 150px;
+}
+
+.stackcard:nth-child(4){
+  margin: 10px;
+  margin-top: 220px;
+}

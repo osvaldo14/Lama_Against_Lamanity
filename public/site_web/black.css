@@ -1,0 +1,40 @@
+.body{
+    background-color: #222222;
+}
+
+.title{
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.sidebar{
+    background-color: #444444;
+}
+
+.spacer10 {
+    height: 10px;
+}
+
+.spacer50 {
+    height: 50px;
+}
+
+.spacer100 {
+    height: 100px;
+}
+
+#result{
+	background		: lime;
+	color			: black;
+	border-radius	: .15in;
+	width			: 200px;
+	display			: none;
+	
+}
+
+#room_list{
+	color			: black;
+}

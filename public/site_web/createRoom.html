@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cards Against Lamanity</title>
+  <script src=/socket.io/socket.io.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel = "stylesheet" type = "text/css" href = "black.css"/>
+</head>
+<body class="body text-white">
+<div class=" bodycontainer-fluid">
+  <div id="topBar"></div>
+
+  <!-- -------------- CONTENT -------------- -->
+  <div class="row">
+    <div class="col">
+      <h1 class="title">So you want to create your own room eh ?</h1>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col" id="create-room">
+    <p class="subtitle">
+      Create Room
+    </p>
+    </div>
+  </div>
+  <div class="spacer10"></div>
+  <div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+
+      <form action="gamepage.html" id="formulaire">
+        <input type="hidden" id="pName" name="PlayerName">
+        <label for="enter_room_name">Enter room name:</label>
+        <input ="text" name="RoomName" id="enter_room_name" placeholder="A431b">
+        <div class="spacer10"></div>
+
+        <label for="player_nb">Select number of player</label>
+    
+        <select class="form-control" name="playersPerRoom" id="room_size_selector">
+          <option value="" disabled selected># of players</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <div class="spacer10"></div>
+        <label for="deck_selector">Select a deck</label>
+        <select class="form-control" name="DeckName" id="deck_selector">
+          <option value="" disabled selected>Select a deck, if any..</option>
+        </select>
+        <div class="spacer50"></div>
+        <input type="submit" id ="Create_Room" value="Create">
+      </form>
+
+    </div>
+    <div class="col-sm"></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+  $(function(){
+    $("#topBar").load("topbar.html");
+  });
+</script>
+<script src="createRoom.js"></script>
+</body>
+</html>
+

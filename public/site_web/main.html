@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cards Against Lamanity</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel = "stylesheet" type = "text/css" href = "black.css"/>
+  <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+</head>
+<body class="body text-white">
+<div class=" bodycontainer-fluid">
+  <div id="topBar"></div>
+
+  <!-- -------------- CONTENT -------------- -->
+  <div class=signup"row">
+    <div class="col">
+      <h1 class="title">CARDS AGAINST LAMANITY</h1>
+      <p class="subtitle">Don't be racist, hate everyone equally.</p>
+    </div>
+  </div>
+  <div class="spacer100"></div>
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center">
+        <div id="dynamicLink"></div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer100"></div>
+
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-10">
+      <h3>RULES :</h3>
+      <p class="text-justify">
+        To start the game, each player draws ten White Cards.
+        The person who most recently pooped begins as the Card Czar and plays a Black Card. The Card Czar reads the questions or fill-in-the-blank phrase on the black card out loud.
+
+        Everyone else answers the question or fills in the blank by passing one white card, face down, to the Card Czar.
+
+        The Card Czar shuffles all of the answers and shares each card combination with the group. For full effect, the Card Czar should usually re-read the black card before presenting each answer. The card Czar then picks the funniest play, and whoever submitted it gets one point.
+
+        After the round, a new player (clockwise) becomes the Card Czar, and everyone draws back up to ten white card. After 10 rounds, whoever has max points wins.
+
+      </p>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+  $(function(){
+    $("#topBar").load("topbar.html");
+  });
+  $(function(){
+    $("#dynamicLink").load("link.html");
+  });
+</script>
+</body>
+</html>
+

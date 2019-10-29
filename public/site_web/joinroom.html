@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cards Against Lamanity</title>
+  <script src=/socket.io/socket.io.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel = "stylesheet" type = "text/css" href = "black.css"/>
+</head>
+<body class="body text-white">
+<div class=" bodycontainer-fluid">
+  <div id="topBar"></div>
+
+  <!-- -------------- CONTENT -------------- -->
+  <div class="row">
+    <div class="col">
+      <h1 class="title">Wow you managed to give a correct name, great !</h1>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col" id="join-room">
+    <p class="subtitle">
+      Now you need to give us the name of the room you want to join,<br>
+      Or you can create your own room, but you don't have any friends to fill it so good luck :
+    </p>
+    </div>
+  </div>
+  <div class="spacer10"></div>
+  <div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm subtitle">
+      <form class="subtitle" action="gamepage.html" id="formulaire">
+        <label for="room_selector">Join Room:</label>
+        <input type="hidden" id="pName" name="PlayerName">
+        <select class="form-control" name="RoomName" id="room_selector">
+          <option value="" disabled selected>Select an option, if any..</option>
+   
+        </select>
+        <div class="spacer10"></div>
+        <input type="submit" id ="SubmitRoomName" value="Join">
+      </form>
+      <div class="spacer50"></div>
+      <p class="subtitle">
+      Create Room<br>
+    </p>
+      <form class="subtitle" action="createRoom.html" id="create_room">
+      	<input type="hidden" id="pName2" name="PlayerName">
+      	<input type="submit" value="Create"> 
+      </form>
+
+    </div>
+    <div class="col-sm"></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+  $(function(){
+    $("#topBar").load("topbar.html");
+  });
+</script>
+<script src="joinroom.js"></script>
+<!--script src="client.js"></script-->
+</body>
+</html>
+

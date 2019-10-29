@@ -1,0 +1,68 @@
+* Analyse
+
+** Résumé du projet
+
+- Version en ligne du jeu de cartes « Cards Against Humanity » (voir également « Limite Limite » et « Blanc Manger Coco »).
+
+Coeur du jeu : 1 carte noire avec un texte à trou -> le joueur doit choisir parmi plusieurs cartes blanches contenant des groupes nominaux ou des actions - pour remplir le texte à trou en cherchant à optimiser la dimension comique de la phrase. Celui dont la phrase est choisie, car elle est la plus comique gagne 1 pt.
+
+La personne qui décide quelle carte est la plus drôle est le Card Czar, celui ci est défini au départ et ensuite le rôle est transmis dans le sens des aiguilles d'une montre au début de chaque tour.
+
+Conditions de victoire : Celui qui a le plus de points à la fin de 10 tours.
+
+Les règles sont expliquées sur notre site de manière plus précise.
+
+
+** Fonctionnalités
+
+La priorité d'implémentation va de 1 à 3 : 1-> à implémenter pour la démo / 2-> à implémenter pour le projet finale / 3-> à implémenter si on a le temps.
+
+- 1)Page d'accueil, page de création/rejoindre des rooms et page du jeu.
+- 1)Ensuite : joindre/créer : nom de la private room + mot de passe du private room
+- 1)"Rooms" qui regroupent des joueurs
+- 1)Création de quelques cartes
+- 1)Chacun son tour les joueurs jouent le rôle de "juge"
+- 2)Fin de la partie après x(10) tours complets
+- 2)Victoire : nombre maximum de points, égalité en cas d'égalité
+- 2)Débute à 4 joueurs
+- 2)Créer ses propres cartes
+- 3)Aucun joueur ne peut rejoindre en cours de route
+- 3)Après 4 joueurs dans la room : les joueurs peuvent appuyer sur un bouton "prêt", quand tout les joueurs sont prêts la partie commence.
+- 3)À partir du moment où il y a 4 joueurs un décompte se lance (pour que les derniers joueurs puissent arriver)
+- 3)À partir de 4 joueurs le créateur peut lancer la partie à tout moment
+- 3)Animation des cartes/ fluidité.
+
+** Organisation
+
+*** Composants
+
+- Quelles vont être les composants/parties de votre projet ?
+1) Le site internet.
+2) La création de room et la connexion des clients.
+3) La création du jeu de carte.
+
+- Quels composants seront développés en premier ?
+Les 3 parties devront être un peu développer en même temps afin de fournir une démo.
+
+*** Librairies
+
+- Quelles librairies allez vous utiliser ?
+
+Interact JS ou two JS (express et jquery pour site et serveur)
+- Pour quelle partie du projet ?
+Le jeu. Animation et création des cartes.
+
+- Raison du choix
+Simplicité
+
+*** Equipe 
+
+- Comment allez-vous vous partager le travail ?
+Client / Serveur.
+Jeu sera surement coder à 2.
+
+- Comment allez-vous tester les différentes parties ?
+
+On testera les connexions aux rooms avant d'implémenter le jeu complet sur le site. 
+Le jeu sera tester à part également avant implémentation.
+
