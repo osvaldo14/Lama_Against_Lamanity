@@ -13,7 +13,7 @@
   "author": "Gustavo&Osvaldo",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "http": "0.0.0",
     "mysql": "^2.16.0",
     "socket.io": "^2.1.1",
